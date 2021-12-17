@@ -5,21 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomato Timer</title>
-    <script src="main.js" defer></script>
+    <script src="bundle.js" defer></script>
 </head>
 <body>
     <div id="container">
-        <h1 id="timeLeft">25:00</h1>
-        <button id="startButton" type="button">Start</button>
-        <button id="stop" type="button">Stop</button>
-        <button id="reset" type="button">Reset</button>
+        <h1 id="timeLeft">00:00</h1>
+        <div id="timingButtons">
+        <button id="startButton25" type="button">25 Minutes</button>
+        <button id="startButton5" type="button">5 Minutes</button>
+        <button id="startButton10" type="button">10 Minutes</button>
+        </div>
+        <div id="secondaryButtons">
+        <button id="stop" type="button">Stop/Restart</button>
+        <button id="instruction">Instructions</button> 
+        </div>
+
         <p id="currentTime"></p>
-        <button id="instruction">Instructions</button>
-        <a href="" id="github">Github</a>
+        
+        <a href="https://github.com/BarnacleJones/tomato" id="github">Github Repo</a>
         <audio id="sound">
             <source  src="sounds/Sound Effects Library - Cat Cat, Purr, Close, Animal, Cats - Domestic Cats.mp3" type="audio/mpeg">
             Your browser does not support the audio element
         </audio>
+    </div>
+    <div id="instructionsArea">
+        <h1>Tomato Timer</h1>
+        <p>This is a productivity timer that follows the pomodoro technique</p>
+        <p>Follow this order</p>
+        <ol>
+            <li>25 Minutes (productivity)</li>
+            <li>5 Minutes (break)</li>
+            <li>25 Minutes (productivity)</li>
+            <li>5 Minutes (break)</li>
+            <li>25 Minutes (productivity)</li>
+            <li>5 Minutes (break)</li>
+            <li>25 Minutes (productivity)</li>
+            <li>10 Minutes (break)</li>
+            <li>Restart!</li>
+          </ol> 
+          <button id="close">Close</button>
     </div>
 </body>
 </html>

@@ -1,10 +1,9 @@
 import { constantDisplay } from "./currentTimeController";
-import { tomatoTimer, stop, restart } from "./tomatoTimerController";
-
+import { initialiseEvents } from "./tomatoTimerController";
+import "./style.css";
 
 //display the current time on the page
 constantDisplay();
 
-document.getElementById("startButton").addEventListener("click", tomatoTimer)
-document.getElementById("stop").addEventListener("click", stop);
-document.getElementById("reset").addEventListener("click", restart);
+initialiseEvents();
+
